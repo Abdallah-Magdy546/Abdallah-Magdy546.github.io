@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Abdallah Magdy · Senior .NET & Dynamics 365 Engineer</title>
+<meta name="description" content="Freelance senior .NET engineer: ASP.NET Core, Dynamics 365 & Power Pages portals, APIs, AI automation and React/Angular front-ends. 50+ government e-services delivered.">
+<meta property="og:title" content="Abdallah Magdy · Senior .NET & Dynamics 365 Engineer">
+<meta property="og:description" content="ASP.NET Core, Dynamics 365, Power Pages, APIs and AI automation. Available for freelance and contract work.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg:#f7f8fb; --surface:#ffffff; --text:#14202e; --muted:#5b6778; --line:#e3e7ee;
+    --accent:#1f6feb; --accent-soft:#e8f0fe; --ok:#1a7f4b; --ok-soft:#dcf5e7;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#0c1118; --surface:#141b25; --text:#e6ebf2; --muted:#98a3b3; --line:#243042; --accent:#5b9dff; --accent-soft:#16253d; --ok:#4cc38a; --ok-soft:#12302a; }
+  }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  html { scroll-behavior:smooth; }
+  body { font-family:Inter, 'Segoe UI', system-ui, sans-serif; background:var(--bg); color:var(--text); line-height:1.6; }
+  a { color:var(--accent); text-decoration:none; }
+  .wrap { max-width:1080px; margin:0 auto; padding:0 20px; }
+  nav { position:sticky; top:0; z-index:5; background:color-mix(in srgb, var(--bg) 88%, transparent); backdrop-filter:blur(8px); border-bottom:1px solid var(--line); }
+  nav .wrap { display:flex; align-items:center; gap:22px; height:58px; }
+  nav .brand { font-weight:800; color:var(--text); margin-right:auto; }
+  nav a.link { color:var(--muted); font-size:14px; font-weight:500; }
+  nav a.link:hover { color:var(--text); }
+  .btn { display:inline-flex; align-items:center; gap:8px; padding:11px 18px; border-radius:10px; font-weight:600; font-size:15px; border:1px solid var(--line); color:var(--text); background:var(--surface); }
+  .btn.primary { background:var(--accent); border-color:var(--accent); color:#fff; }
+  .btn:hover { transform:translateY(-1px); }
+  header.hero { padding:72px 0 48px; }
+  .badge { display:inline-flex; align-items:center; gap:8px; background:var(--ok-soft); color:var(--ok); font-weight:600; font-size:13px; padding:5px 12px; border-radius:99px; }
+  .badge::before { content:""; width:8px; height:8px; border-radius:50%; background:var(--ok); }
+  h1 { font-size:clamp(34px, 5.5vw, 56px); line-height:1.08; letter-spacing:-1.2px; margin:18px 0 16px; font-weight:800; }
+  h1 span { color:var(--accent); }
+  .lead { font-size:19px; color:var(--muted); max-width:720px; }
+  .cta { display:flex; flex-wrap:wrap; gap:10px; margin-top:28px; }
+  .stats { display:grid; grid-template-columns:repeat(4,1fr); gap:12px; margin-top:44px; }
+  .stat { background:var(--surface); border:1px solid var(--line); border-radius:14px; padding:18px; }
+  .stat b { display:block; font-size:30px; font-weight:800; letter-spacing:-.5px; }
+  .stat span { color:var(--muted); font-size:14px; }
+  section { padding:56px 0; border-top:1px solid var(--line); }
+  h2 { font-size:30px; letter-spacing:-.6px; margin-bottom:8px; }
+  .sub { color:var(--muted); margin-bottom:28px; max-width:680px; }
+  .grid { display:grid; grid-template-columns:repeat(3,1fr); gap:14px; }
+  .card { background:var(--surface); border:1px solid var(--line); border-radius:14px; padding:22px; }
+  .card h3 { font-size:17px; margin-bottom:6px; }
+  .card p { color:var(--muted); font-size:15px; }
+  .icon { width:38px; height:38px; border-radius:10px; background:var(--accent-soft); color:var(--accent); display:grid; place-items:center; font-size:19px; margin-bottom:12px; }
+  .feature { display:grid; grid-template-columns:1.2fr 1fr; gap:24px; background:var(--surface); border:1px solid var(--line); border-radius:16px; padding:28px; margin-bottom:14px; }
+  .feature h3 { font-size:21px; margin-bottom:4px; }
+  .meta { color:var(--accent); font-weight:600; font-size:14px; margin-bottom:10px; }
+  .feature ul { padding-left:18px; color:var(--muted); } .feature li { margin-bottom:6px; }
+  .tags { display:flex; flex-wrap:wrap; gap:6px; align-content:flex-start; }
+  .tag { background:var(--accent-soft); color:var(--accent); font-size:13px; font-weight:600; padding:4px 10px; border-radius:7px; }
+  .portals { display:grid; grid-template-columns:repeat(2,1fr); gap:10px; }
+  .portal { display:flex; justify-content:space-between; gap:12px; align-items:flex-start; background:var(--surface); border:1px solid var(--line); border-radius:12px; padding:14px 16px; }
+  .portal b { display:block; font-size:15px; } .portal span { color:var(--muted); font-size:14px; }
+  .live { flex-shrink:0; background:var(--ok-soft); color:var(--ok); font-size:12px; font-weight:700; padding:3px 9px; border-radius:99px; }
+  .skills { display:grid; grid-template-columns:repeat(2,1fr); gap:14px; }
+  .steps { counter-reset:s; display:grid; grid-template-columns:repeat(4,1fr); gap:14px; }
+  .step { background:var(--surface); border:1px solid var(--line); border-radius:14px; padding:20px; }
+  .step::before { counter-increment:s; content:counter(s); display:inline-grid; place-items:center; width:30px; height:30px; border-radius:50%; background:var(--accent); color:#fff; font-weight:700; margin-bottom:10px; }
+  .step h3 { font-size:16px; margin-bottom:4px; } .step p { color:var(--muted); font-size:14px; }
+  .contact { background:linear-gradient(135deg, var(--accent), #6a4cff); color:#fff; border-radius:20px; padding:44px; text-align:center; }
+  .contact h2 { color:#fff; } .contact p { opacity:.9; margin:6px auto 24px; max-width:560px; }
+  .contact .btn { background:#fff; color:#14202e; border:none; }
+  .contact .btn.ghost { background:rgba(255,255,255,.14); color:#fff; }
+  footer { color:var(--muted); font-size:14px; text-align:center; padding:28px 0 40px; }
+  @media (max-width:860px) {
+    .grid, .steps { grid-template-columns:1fr 1fr; } .stats { grid-template-columns:1fr 1fr; }
+    .feature { grid-template-columns:1fr; } .portals, .skills { grid-template-columns:1fr; }
+    nav a.link { display:none; }
+  }
+  @media (max-width:520px) { .grid, .steps { grid-template-columns:1fr; } .contact { padding:30px 18px; } }
+</style>
+</head>
+<body>
+<nav><div class="wrap">
+  <a class="brand" href="#">Abdallah Magdy</a>
+  <a class="link" href="#services">Services</a>
+  <a class="link" href="#work">Work</a>
+  <a class="link" href="#skills">Skills</a>
+  <a class="link" href="#contact">Contact</a>
+  <a class="btn primary" href="#contact" style="padding:8px 14px;font-size:14px">Hire me</a>
+</div></nav>
+
+<header class="hero"><div class="wrap">
+  <span class="badge">Available for freelance & contract work</span>
+  <h1>Senior <span>.NET</span> engineer who ships<br>portals, APIs and automation.</h1>
+  <p class="lead">I build reliable ASP.NET Core systems, Dynamics 365 &amp; Power Pages portals, integrations and AI-powered
+  automation, from architecture to deployment. 5 years of production work for government ministries and a German logistics company.</p>
+  <div class="cta">
+    <a class="btn primary" href="mailto:magdyabdalla751@gmail.com?subject=Project%20inquiry">✉ Email me</a>
+    <a class="btn" href="https://wa.me/201126886316" target="_blank" rel="noopener">WhatsApp</a>
+    <a class="btn" href="CV.pdf" target="_blank">Download CV</a>
+  </div>
+  <div class="stats">
+    <div class="stat"><b>5 yrs</b><span>production .NET experience</span></div>
+    <div class="stat"><b>~50</b><span>e-services delivered</span></div>
+    <div class="stat"><b>12+</b><span>government ministries & agencies</span></div>
+    <div class="stat"><b>4</b><span>global shipping carriers integrated</span></div>
+  </div>
+</div></header>
+
+<section id="services"><div class="wrap">
+  <h2>What I can do for you</h2>
+  <p class="sub">Clear scope, small milestones with demos, and code your team can maintain after I hand it over.</p>
+  <div class="grid">
+    <div class="card"><div class="icon">⚙</div><h3>ASP.NET Core apps & APIs</h3><p>New systems or rescuing existing ones: Clean Architecture, EF Core, SQL Server, Redis caching, secure REST APIs with JWT.</p></div>
+    <div class="card"><div class="icon">◈</div><h3>Dynamics 365 & Power Pages</h3><p>Customer and citizen portals on Dataverse, C# plugins, CRM integration with external sites and services.</p></div>
+    <div class="card"><div class="icon">✦</div><h3>AI agents & automation</h3><p>LLM assistants, chat-with-your-data, document extraction and workflow automation that removes manual work.</p></div>
+    <div class="card"><div class="icon">⇄</div><h3>Integrations</h3><p>Shipping carriers, payment and reporting, SAP, WhatsApp, third-party APIs: reliable data flow between systems.</p></div>
+    <div class="card"><div class="icon">▣</div><h3>Front-end</h3><p>Angular, React and Next.js dashboards and portals, bilingual Arabic/English (RTL) interfaces.</p></div>
+    <div class="card"><div class="icon">☁</div><h3>Azure deployment & upkeep</h3><p>App Services and VMs, environments, releases, performance fixes and ongoing support.</p></div>
+  </div>
+</div></section>
+
+<section id="work"><div class="wrap">
+  <h2>Selected work</h2>
+  <p class="sub">Large, real-world systems in production.</p>
+
+  <div class="feature">
+    <div>
+      <h3>Logistics management platform</h3>
+      <div class="meta">GTS, German logistics company · 2022 – present</div>
+      <ul>
+        <li>End-to-end platform for cargo, customs clearance, smart import/export and supply-chain automation.</li>
+        <li>AI agent and automated flows that make operational decisions and cut manual intervention.</li>
+        <li>Live tracking and data exchange with UPS, FedEx, SMSA and Naql.</li>
+        <li>Redis caching and modular services for heavy transaction volumes.</li>
+      </ul>
+    </div>
+    <div class="tags"><span class="tag">.NET Core 8</span><span class="tag">Clean Architecture</span><span class="tag">SQL Server</span><span class="tag">Redis</span><span class="tag">Azure</span><span class="tag">Angular</span><span class="tag">AI agents</span><span class="tag">REST APIs</span></div>
+  </div>
+
+  <div class="feature">
+    <div>
+      <h3>Government e-portals for Kuwait</h3>
+      <div class="meta">Amek Capital, Microsoft Partner · 2021 – present</div>
+      <ul>
+        <li>Architecture and backend lead for portals serving citizens, lawyers, companies and officials.</li>
+        <li>~50 e-services from simple forms to multi-step approval workflows across 12+ ministries.</li>
+        <li>Dynamics 365 integrated with custom ASP.NET and Power Pages portals; C# plugins.</li>
+        <li>Government-grade security (JWT / sessions), Azure deployments, team lead for 3–4 engineers.</li>
+      </ul>
+    </div>
+    <div class="tags"><span class="tag">ASP.NET MVC</span><span class="tag">.NET 5–10</span><span class="tag">Dynamics 365</span><span class="tag">Dataverse</span><span class="tag">Power Pages</span><span class="tag">Azure</span><span class="tag">Next.js</span></div>
+  </div>
+
+  <h3 style="margin:26px 0 12px">Portals in production</h3>
+  <div class="portals">
+    <div class="portal"><div><b>Ministry of Finance</b><span>Financial services for citizens and entities</span><br><a href="https://mofcsportal.azurewebsites.net" target="_blank" rel="noopener">mofcsportal.azurewebsites.net ↗</a></div><span class="live">LIVE</span></div>
+    <div class="portal"><div><b>KFAS</b><span>Research grant applications (Dynamics 365 + .NET API)</span><br><a href="https://apply.kfas.org.kw" target="_blank" rel="noopener">apply.kfas.org.kw ↗</a></div><span class="live">LIVE</span></div>
+    <div class="portal"><div><b>DGCA Civil Aviation</b><span>Public complaints portal and audit system</span><br><a href="https://kcaa.dgca.gov.kw" target="_blank" rel="noopener">kcaa.dgca.gov.kw ↗</a></div><span class="live">LIVE</span></div>
+    <div class="portal"><div><b>Ministry of Justice</b><span>6 portals: citizens, lawyers, entities, e-services, power of attorney, contracts</span></div></div>
+    <div class="portal"><div><b>Ministry of Health & Public Health</b><span>Complaints, Treatment Abroad (+ mobile API), birth registration</span></div></div>
+    <div class="portal"><div><b>Diwan RTRI, Nazaha, Prosecution, MOCI, Awqaf</b><span>Right to information, financial disclosure, family affairs and more</span></div></div>
+  </div>
+</div></section>
+
+<section id="skills"><div class="wrap">
+  <h2>Skills</h2>
+  <p class="sub">The stack I use every day.</p>
+  <div class="skills">
+    <div class="card"><h3>Backend</h3><div class="tags" style="margin-top:8px"><span class="tag">C#</span><span class="tag">.NET 5–10</span><span class="tag">ASP.NET Core</span><span class="tag">ASP.NET MVC</span><span class="tag">Web API</span><span class="tag">EF Core</span><span class="tag">Clean Architecture</span><span class="tag">Microservices</span></div></div>
+    <div class="card"><h3>Microsoft platform</h3><div class="tags" style="margin-top:8px"><span class="tag">Dynamics 365</span><span class="tag">Dataverse</span><span class="tag">Power Pages</span><span class="tag">Power Automate</span><span class="tag">Azure</span><span class="tag">Azure DevOps</span></div></div>
+    <div class="card"><h3>Front-end</h3><div class="tags" style="margin-top:8px"><span class="tag">Angular</span><span class="tag">React</span><span class="tag">Next.js</span><span class="tag">TypeScript</span><span class="tag">Tailwind</span><span class="tag">Arabic RTL</span></div></div>
+    <div class="card"><h3>Data, AI & DevOps</h3><div class="tags" style="margin-top:8px"><span class="tag">SQL Server</span><span class="tag">PostgreSQL</span><span class="tag">Redis</span><span class="tag">LLM agents</span><span class="tag">Text-to-SQL</span><span class="tag">Python</span><span class="tag">Docker</span><span class="tag">CI/CD</span></div></div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <h2>How we'll work</h2>
+  <p class="sub">Simple and transparent, whether it's a two-day fix or a multi-month build.</p>
+  <div class="steps">
+    <div class="step"><h3>Short call</h3><p>We agree on goals, scope and what "done" looks like.</p></div>
+    <div class="step"><h3>Plan & quote</h3><p>Milestones with a fixed price or hourly estimate and dates.</p></div>
+    <div class="step"><h3>Build & demo</h3><p>Working software at each milestone; you see progress weekly.</p></div>
+    <div class="step"><h3>Handover</h3><p>Deployment, documentation and support after launch.</p></div>
+  </div>
+</div></section>
+
+<section id="contact" style="border-top:none"><div class="wrap">
+  <div class="contact">
+    <h2>Have a project in mind?</h2>
+    <p>Tell me what you need. I usually reply within a few hours (GMT+2/+3), in English or Arabic.</p>
+    <div class="cta" style="justify-content:center">
+      <a class="btn" href="mailto:magdyabdalla751@gmail.com?subject=Project%20inquiry">✉ magdyabdalla751@gmail.com</a>
+      <a class="btn ghost" href="https://wa.me/201126886316" target="_blank" rel="noopener">WhatsApp</a>
+      <a class="btn ghost" href="https://www.linkedin.com/in/abdalla-magdy-1a2582245" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn ghost" href="https://github.com/Abdallah-Magdy546" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </div>
+</div></section>
+
+<footer>© 2026 Abdallah Magdy · Tanta, Egypt · Remote worldwide</footer>
+</body>
+</html>
